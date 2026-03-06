@@ -1,0 +1,55 @@
+@use './config' as c;
+.cards {
+    &--container {
+        padding: c.$padding;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
+
+.card {
+    &--light {
+        background-color: c.$background-color;
+        color: c.$text-color;
+        padding: c.$padding;
+        width: 20vw;
+    }
+
+    &--dark {
+        background-color: c.$text-color;
+        color: c.$background-color;
+        padding: c.$padding;
+        width: 20vw;
+    }
+
+    &__visual {
+        width: 100%;
+    }
+
+    &__text {
+        padding-left: 20px;
+
+        @media (max-width: 768px) {
+            width: c.$card-width-mobile;
+        }
+
+        &__paragraph {
+            padding-right: c.$padding;
+        }
+
+        &__button {
+            background-color: c.$border-color;
+            border-radius: 10px;
+            border: 2px solid c.$text-border-color;
+            padding: c.$padding;
+            color: c.$text-border-color;
+            cursor: pointer;
+        }
+    }
+}

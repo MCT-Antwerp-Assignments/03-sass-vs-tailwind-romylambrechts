@@ -1,49 +1,75 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>sass-cards</title>
+  <title>tailwind-cards</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
-  <div class="cards--container">
-    <div class="card--light">
-      <img class="card__visual" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
-        alt="geblurde foto van bibliotheek">
-      <div class="card__text">
-        <h3 class="card__heading">BIBLIOTHEEK ANTWERPEN</h3>
-        <p class="card__paragraph">
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+
+  <div class="flex flex-col md:flex-row gap-[20px] md:gap-[30px] p-[10px]">
+
+    <!-- CARD LIGHT -->
+    <div class="bg-[#f277a4] text-black p-[10px] w-[80vw] md:w-[20vw]">
+
+      <img 
+        class="w-full" 
+        src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
+        alt="geblurde foto van bibliotheek"
+      >
+
+      <div class="pl-[20px]">
+
+        <h3 class="font-bold mt-2">
+          BIBLIOTHEEK ANTWERPEN
+        </h3>
+
+        <p class="pr-[10px] mt-2">
           Ontdek de Bib van Antwerpen! 📚✨
           Duik in duizenden boeken, blader door tijdschriften, of vind de perfecte plek om te studeren. Van boeiende
-          workshops tot inspirerende evenementen: bij ons vind je kennis én gezelligheid onder één dak. Kom langs en
-          laat je verrassen door alles wat de Bib te bieden heeft!
+          workshops tot inspirerende evenementen: bij ons vind je kennis én gezelligheid onder één dak.
         </p>
-        <button class="card__button">Lees meer</button>
+
+        <button class="mt-3 bg-[#cc2b66] border-2 border-[#fcc0d6] text-[#fcc0d6] rounded-[10px] p-[10px] cursor-pointer">
+          Lees meer
+        </button>
+
       </div>
     </div>
 
-    <div class="card--dark">
-      <img class="card__visual" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
-        alt="geblurde foto van bibliotheek">
-      <div class="card__text">
-        <h3 class="card__heading">BIBLIOTHEEK ANTWERPEN</h3>
-        <p class="card__paragraph">
+    <!-- CARD DARK -->
+    <div class="bg-black text-[#f277a4] p-[10px] w-[80vw] md:w-[20vw]">
+
+      <img 
+        class="w-full" 
+        src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
+        alt="geblurde foto van bibliotheek"
+      >
+
+      <div class="pl-[20px]">
+
+        <h3 class="font-bold mt-2">
+          BIBLIOTHEEK ANTWERPEN
+        </h3>
+
+        <p class="pr-[10px] mt-2">
           Ontdek de Bib van Antwerpen! 📚✨
           Duik in duizenden boeken, blader door tijdschriften, of vind de perfecte plek om te studeren. Van boeiende
-          workshops tot inspirerende evenementen: bij ons vind je kennis én gezelligheid onder één dak. Kom langs en
-          laat je verrassen door alles wat de Bib te bieden heeft!
+          workshops tot inspirerende evenementen: bij ons vind je kennis én gezelligheid onder één dak.
         </p>
-        <button class="card__button">Lees meer</button>
+
+        <button class="mt-3 bg-[#cc2b66] border-2 border-[#fcc0d6] text-[#fcc0d6] rounded-[10px] p-[10px] cursor-pointer">
+          Lees meer
+        </button>
+
       </div>
     </div>
-  </div>
+
   </div>
 
 </body>
-
 </html>
